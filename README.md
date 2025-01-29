@@ -1,0 +1,1 @@
+The purpose of this repo is to create datasets and models that can be used to conduct statistical analysis on the game of badminton. I will aim to make all of my code easily usable and customizable so that anyone interested can use their own methods on these datasets.
