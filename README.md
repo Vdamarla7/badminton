@@ -16,6 +16,8 @@ VideoBadminton is a dataset of badminton clips that can be used to train ML mode
 
 I decided to create a derived dataset by extracting the poses and the bounding boxes of the players in this dataset. These poses can then be used to train ML models that utilize poses to classify shots. I am publishing this dataset for free so that anyone can work with these poses without having to extract them themselves.
 
+Here is the link to the CSV files for the poses: [extracted poses](https://drive.google.com/file/d/14Ktq68uIm1I6CGAd1xHeOqgWw66stNo4/view?usp=sharing)
+
 ## How I created the data set:
 The code is available here: [extract_poses_with_sapiens.py](https://github.com/Vdamarla7/badminton/blob/main/badminton/extract_poses_with_sapiens.py)
 . I used the YOLO model to find the bounding boxes of every person in every single frame. Then I take the two biggest bounding boxes to run the Sapiens Pose Estimation model on, and I draw these onto the frame. The technique of using the two biggest bounding boxes works well for the VideoBadminton dataset, but may not work well with others, as one of the non-players may have a big bounding box.
