@@ -1,46 +1,7 @@
-
----
-
-
----
-
-
-
----
-
-
-
-
-## 5/ Replicated prior findings (CNN & LSTM)
-
-For the Video Badminton Dataset, I replicated baseline results using simple temporal models:
-
-CNN baseline (frame features ➜ temporal pooling)
-Notebook: notebooks/baselines/cnn_baseline.ipynb
-
-LSTM baseline (pose sequences ➜ shot label)
-Notebook: notebooks/baselines/lstm_baseline.ipynb
-
-These aren’t state‑of‑the‑art; they’re solid reference points that help quantify progress when we add strong priors (poses, court geometry) and explainability.
-
-
-
-**********************************
-**********************************
-**********************************
-**********************************
-**********************************
-
-
-
-# Badminton Video Analysis
-
-# Create a ready-to-commit README.md that combines the earlier repo homepage
-# with the new Section 10 (papers & datasets).
-
-readme = """# AI Coach — Pose‑Centric Experiments for Badminton
+# Towards AI Coaches — Pose‑Centric and Explainable ML Experiments for Badminton
 
 > Exploring AI‑assisted coaching for physical activities, starting with **badminton** and expanding to **other physical activites**. This repo contains pose datasets, code, and an LLM shot‑classification prototypes.
+
 ---
 
 ## Table of Contents
