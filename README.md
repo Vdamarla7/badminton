@@ -8,7 +8,7 @@
 1. [Introduction](#1-introduction)  
 2. [Why badminton?](#2-why-badminton)  
 3. [Why poses?](#3-why-poses)
-4. [Open-sourced pose releases](#4-open-sourced-poses)
+4. [Open sourced pose releases](#4-open-sourced-poses)
 6. [Replicating prior findings (CNN & LSTM)](#5-replicating-prior-findings-cnn--lstm)  
 7. [LMM/LLM-based evaluation: motivation](#6-lmmllm-based-evaluation-motivation)  
 8. [System A — PoseScript ➜ LLM shot classification](#7-system-a--posescript--llm-shot-classification)  
@@ -60,7 +60,7 @@ If we can make it work here, we should be able to generalize to other sports/act
 
 ---
 
-## 4/ Open-sourced pose releases
+## 4/ Open sourced pose releases
 I’m releasing pose sequences extracted from common badminton video datasets so others can reproduce my results and have a baseline to build on.
 
 - **VideoBadminton — Poses**  
