@@ -9,17 +9,17 @@
 2. [Why badminton?](#2-why-badminton)  
 3. [Why poses?](#3-why-poses)
 4. [Open sourced pose releases](#4-open-sourced-pose-releases)
-6. [Replicating prior findings (CNN & LSTM)](#5-replicating-prior-findings-cnn--lstm)  
-7. [LMM/LLM-based evaluation: motivation](#6-lmmllm-based-evaluation-motivation)  
-8. [System A — PoseScript ➜ LLM shot classification](#7-system-a--posescript--llm-shot-classification)  
-9. [System B — Custom text generator ➜ LLM shot classification](#8-system-b--custom-text-generator--llm-shot-classification)  
-10. [Pointers: papers & datasets](#9-pointers-papers--datasets)  
+5. [Replicating prior findings (CNN & LSTM)](#5-replicating-prior-findings-cnn--lstm)  
+6. [LMM/LLM-based evaluation: motivation](#6-lmmllm-based-evaluation-motivation)  
+7. [System A — PoseScript ➜ LLM shot classification](#7-system-a--posescript--llm-shot-classification)  
+8. [System B — Custom text generator ➜ LLM shot classification](#8-system-b--custom-text-generator--llm-shot-classification)  
+9. [Pointers: papers & datasets](references.md)  
 
 — [Quickstart](#quickstart) • [Repo Structure](#repo-structure) • [Contributing](#contributing) • [License](#license) • [Acknowledgements](#acknowledgements)
 
 ---
 
-## 1/ Introduction
+## 1: Introduction
 I’m interested in building **AI-based coaches for physical activities**. The long-term goal is a system that can (a) **observe** your movement, (b) **explain** what’s happening in human terms, and (c) **suggest** targeted adjustments—like a good coach would.
 
 I started this project because my math and programming skills improved when I used ChatGPT and other tools. They felt like always-available, infinitely patient coaches that explained solutions step by step. I **wondered** if similar AI coaches were possible for physical activities as well.
@@ -32,7 +32,7 @@ In this repo, I share datasets, code samples, and ML models for statistical anal
 
 ---
 
-## 2/ Why badminton?
+## 2: Why badminton?
 
 Badminton is as much a game of anticipation and preparation as it is a game of strength and speed. Understanding your opponent’s playing style and favorite shots can provide the split-second advantage you need to win a point. Traditionally, players observe opponents’ shot selection throughout a tournament and prepare for their match. Today, match footage is widely available online; with modern computer vision, ML, and statistics, players can drastically improve preparation and training.
 
@@ -48,7 +48,7 @@ If we can make it work here, we should be able to generalize to other sports/act
 
 ---
 
-## 3/ Why poses?
+## 3: Why poses?
 
 **Pose** provides a compact, largely appearance-invariant representation of human movement:
 
@@ -60,7 +60,7 @@ If we can make it work here, we should be able to generalize to other sports/act
 
 ---
 
-## 4/ Open sourced pose releases
+## 4: Open sourced pose releases
 I’m releasing pose sequences extracted from common badminton video datasets so others can reproduce my results and have a baseline to build on.
 
 - **VideoBadminton — Poses**  
@@ -82,7 +82,7 @@ Some videos could not be read or had frame-count anomalies—see `exceptions.txt
 
 ---
 
-## 5/ Replicating prior findings (CNN & LSTM)
+## 5: Replicating prior findings (CNN & LSTM)
 For **VideoBadminton**, I replicated simple temporal baselines:
 
 - **CNN baseline (frame features ➜ temporal pooling)**  
@@ -95,7 +95,7 @@ They’re not SOTA; they’re **solid reference points** to quantify progress wh
 
 ---
 
-## 6/ LMM/LLM-based evaluation: motivation
+## 6: LMM/LLM-based evaluation: motivation
 The deep baselines above make **correct** predictions reasonably often, but they’re **opaque**:
 
 - It’s hard to know **what they learned** or **why** a specific prediction was made.  
@@ -105,7 +105,7 @@ So I’m testing **LLM/LMM** pipelines that convert pose sequences into **natura
 
 ---
 
-## 7/ System A — PoseScript → LLM shot classification
+## 7: System A — PoseScript → LLM shot classification
 **Idea:** Use a pose-to-text generator (e.g., PoseScript-style descriptions) to narrate short clips, then classify with an LLM.
 
 **Pipeline**
@@ -135,7 +135,7 @@ rationale: ...
 
 ---
 
-## 8/ System B — Custom text generator → LLM shot classification
+## 8: System B — Custom text generator → LLM shot classification
 **Idea:** Instead of generic pose narration, generate **task-specific** text with **hand-crafted features** (joint angles, velocities, contact height, footwork patterns, stance).
 
 **Feature → Text rules (examples):**
@@ -156,7 +156,7 @@ This version yields **short, information-dense** prompts and typically **clearer
 
 ---
 
-## 9/ Pointers: papers & datasets
+## 9: Pointers: papers & datasets
 A living, opinionated list of references relevant to this repo (pose estimation, 2D→3D, court calibration, racquet-sport datasets, anticipation/prediction, simulation, pose↔language, pose-centric action recognition).  
 See: `REFERENCES.md` (or open an issue/PR to suggest additions).
 
