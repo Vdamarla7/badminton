@@ -70,7 +70,7 @@ I created a derived dataset by extracting player poses and bounding boxes from e
 
 **CSV files for the poses:** [extracted poses](https://drive.google.com/file/d/14Ktq68uIm1I6CGAd1xHeOqgWw66stNo4/view?usp=sharing)
 
-More details [here](pose_extraction/extractor.md)
+More details [here](pose_extraction/extractor.md).
 
 ---
 
