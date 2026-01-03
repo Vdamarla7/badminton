@@ -61,7 +61,7 @@ def keypoints_to_list(keypoints):
 
 def create_keypoints_dict(values, kps = COCO_KEYPOINTS):
     keypoints = {}
-    for i, (name, x, y, conf) in enumerate(zip(kps, values[1::3], values[2::3], values[3::3])):
+    for i, (name, x, y, conf) in enumerate(zip(kps, values[0::3], values[1::3], values[2::3])):
         keypoints[name] = (float(x), float(y), float(conf))
     return keypoints
 
