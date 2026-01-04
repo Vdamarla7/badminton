@@ -1,0 +1,65 @@
+{
+  "pose_classification": {
+    "base_template": "You are a helpful assistant that will give me the key from a description.\n\nThe key and value pairs are below:\n\n{pose_mappings}\n\nThe description is below:\n\nDescription: {description}\n\nWhat is the key?",
+    "full_template": "You are a helpful assistant that will give me the key from a description.\n\nThe key and value pairs are below:\n\n{pose_mappings}\n\nThe description is below:\n\nDescription: {description}\n\nWhat is the key?",
+    "simplified_template": "You are a helpful assistant that will give me the key from a description.\n\nThe key and value pairs are below:\n{simplified_mappings}\n\nThe description is below:\n\nDescription: {description}\n\nWhat is the key?"
+  },
+  "shot_classification": {
+    "identity": "You are a badminton assistant coach trained to recognize badminton shot types from pose sequences.",
+    "task_description": "Given: A court position A sequence of pose frames encoded as orientation tokens\nOutput: Predict the single most likely shot label and a confidence in [0, 1].\nIt is acceptable to output a low confidence if the sequence is ambiguous.",
+    "input_format": "Position: {FrontCourt, ServeLine, MidCourt, BackCourt}\nFrames: Frame,left_arm,left_leg,left_torso,right_arm,right_leg,right_torso\nt0,P_A1_A2,P_A1_A2,P_A1_A2,P_A1_A2,P_A1_A2,P_A1_A2\nt1,P_A1_A2,P_A1_A2,P_A1_A2,P_A1_A2,P_A1_A2,P_A1_A2\n...\n\nEach row = one video frame\nEach column = one body segment, described by two connected joint orientations.\nEach entry has the form P_<angle1>_<angle2>,\nwhere: <angle1> = orientation (in degrees) of the joint closer to the torso\n<angle2> = orientation (in degrees) of the joint further from the torso\n\nExample interpretation: right_arm = P_315.0_225.0\nthe upper arm (shoulder to elbow) is oriented at 315.0°\nand the forearm (elbow to wrist) at 225.0°\nangles measured in a consistent global or camera-aligned reference\n\nSegment Definitions (columns)\nleft_arm: left shoulder → left elbow → left wrist\nleft_leg: left hip → left knee → left ankle\nleft_torso: left shoulder → left hip → left knee\nright_arm: right shoulder → right elbow → right wrist\nright_leg: right hip → right knee → right ankle\nright_torso: right shoulder → right hip → right knee",
+    "attention_constraint": "For classification, use only:\nYou may consider Position as context.\nIgnore all other columns when forming the prediction.\nPay attention to how the orientations start (mainly in first few frames) and then evolve over time.",
+    "output_format": "Allowed Labels: Use only one of the following labels:\n00_Short_Serve\n05_Drop_Shot\n13_Long_Serve\n14_Smash\n\nOutput Format (strict): Return exactly this JSON structure with a single prediction:\n{\"predictions\": [\n{\n\"label\": \"<one_of_the_allowed_labels>\",\n\"confidence\": <number_between_0_and_1>,\n\"evidence\": \"<short explanation of why this label was chosen, referencing right_arm + right_torso motion and Position context, and why confidence is high/low>\"\n}\n]}\n\nlabel: One of the allowed labels\nconfidence: Your certainty, a number in [0,1]\nevidence: A brief, human-readable explanation that justifies the prediction and confidence\n\nIf you are unsure, choose the best label and set a lower confidence (e.g., 0.35),\nand explain the uncertainty in the evidence.",
+    "additional_guidance": "Treat angles as cyclic (e.g., 350° close to 10°).\n\nUse temporal cues: wrist snap, upper-arm swing direction, contact-height proxies from right_arm evolution,\nand torso rotation from right_torso. Use Position as a prior (e.g., ServeLine increases probability of\nserve types; BackCourt increases probability of clear/smash; FrontCourt increases drop/net/push).\nIf frames are too few or static, still return your best single label with an appropriately low\nconfidence.",
+    "shot_descriptions": {
+      "00_Short_Serve": {
+        "position": "ServeLine",
+        "right_arm_orientations": {
+          "start": "Few of the early frames is close to P_210_330",
+          "after_start": "There is a very slight movement when the serve happens. Afterwards the motion varies, may include small follow-through or preparation movements"
+        },
+        "left_arm_orientations": {
+          "start": "Few of the first 5 frames is close to P_330_210",
+          "after_start": "After the birdie is released, there is a slight movement as the serve happens. Afterwards the motion varies, but the left arm typically drops downwards."
+        },
+        "right_torso_orientations": "Usually stable, minimal rotation",
+        "left_torso_orientations": "Usually stable, minimal rotation",
+        "notes": "Compact motion, low shuttle contact\nKey differentiator: serve line + right_arm starting orientation close to P_210_330 + left_arm starting orientation close to P_330_210"
+      },
+      "13_Long_Serve": {
+        "position": "ServeLine",
+        "right_arm_orientations": {
+          "start": "Few of the early frames will be close to P_210_240 or P_240_240",
+          "motion": "Larger upward swing, extending toward higher orientations (e.g. ~P_60_60 or P_120_120)"
+        },
+        "left_arm_orientations": {
+          "start": "Few of the first 5 frames is close to P_330_210",
+          "after_start": "After the birdie is released, there is a larger movement as the arm opens up and swings out and down."
+        },
+        "right_torso_orientations": "Usually stable, minimal rotation",
+        "left_torso_orientations": "Usually stable, minimal rotation",
+        "notes": "Trajectory intended to push shuttle deep\nArm extension stronger than in short serve for both the right and left arms\nKey differentiator: serve line + right_arm starting orientation close to P_210_240 + left_arm starting orientation close to P_330_210"
+      },
+      "05_Drop_Shot": {
+        "position": "MidCourt or FrontCourt",
+        "right_arm_orientations": {
+          "start": "Starts near the bottom. Few of the first 5 frames will be close to P_270_270, P_300,300, P_330_330",
+          "motion": "Smaller controlled swing, wrist relaxes early"
+        },
+        "right_torso_orientations": "Bent forward with limited rotation",
+        "right_leg_orientations": "Will start with a bent knee, so the orientation could be around P_90_135 or P_90_45\nThen will stand up and become straight like P_90_90 or P_90_135",
+        "notes": "Controlled motion with early wrist release\nKey differentiator: mid/front court position + controlled arm swing + bent forward torso"
+      },
+      "14_Smash": {
+        "position": "MidCourt or BackCourt",
+        "right_arm_orientations": {
+          "start": "One of the first 5 frames will be Raised and cocked (~P_90_90, P_135_135)",
+          "motion": "Fast, steep downward snap (angles drop sharply). Within a few frames it will move from high orientation to low orientation (~P_210_210, P_245_245, P_270_270)"
+        },
+        "right_torso_orientations": "Sharp forward rotation",
+        "notes": "Steep arm drop + wrist snap = smash signature"
+      }
+    },
+    "full_template": "{identity}\n\nTask:\n\n{task_description}\n\n{input_format}\n\n{attention_constraint}\n\nOutput Format:\n{output_format}\n\n{additional_guidance}\n\nShot Descriptions: (to improve consistency)\n\n{shot_descriptions_formatted}\n\nInput:\nIdentify the shot for this input data:\n\n{input_data}"
+  }
+}

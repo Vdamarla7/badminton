@@ -4,13 +4,18 @@ import cv2
 import imageio
 import os
 import numpy as np
+import warnings
 from .coco_keypoints import (
     COCO_KPTS_COLORS,
     COCO_SKELETON_INFO,
     create_keypoints_dict
 )
 
-from .poselet_classifier import classify_triplet
+try:
+    from .poselet_classifier import classify_triplet
+except (ImportError, ModuleNotFoundError):
+    # Fallback for testing or when sklearn is not available
+    from .poselet_classifier_mock import classify_triplet
 
 from .utilities import get_video_metadata, get_video_frames
 
@@ -40,7 +45,7 @@ def list_video_files(folder_path, video_extensions=None):
         video_extensions = ['.mp4', '.mov', '.avi', '.mkv', '.flv', '.wmv']
 
     # Walk through the folder and its subfolders
-    filesList = []
+    files_list = []
     for root, dirs, files in os.walk(folder_path):
         for file in files:
             # Check if the file has one of the desired video extensions
@@ -53,9 +58,9 @@ def list_video_files(folder_path, video_extensions=None):
                 ret, frame = cap.read()
                 if not ret:
                     continue
-                filesList.append(relative_path)
+                files_list.append(relative_path)
                 
-    return(filesList)
+    return(files_list)
 
 def crop_image(img, bbox):
     x1, y1, x2, y2 = map(int, bbox[:4])
@@ -99,7 +104,25 @@ def draw_keypoints(img, bbox, keypoints, color, confidence=0):
 
 
 class VideoPoseDataset:
+    """
+    DEPRECATED: This class has been refactored into modular components.
+    Use badminton.data.video_pose_dataset.VideoPoseDataset instead.
+    
+    This legacy class is maintained for backward compatibility but will be removed in a future version.
+    The new modular approach provides better separation of concerns:
+    - badminton.data.pose_data_loader.PoseDataLoader for data loading
+    - badminton.visualization.pose_visualizer.PoseVisualizer for visualization
+    - badminton.features.pose_feature_extractor.PoseFeatureExtractor for feature extraction
+    - badminton.analysis.shot_descriptor.ShotDescriptor for shot analysis
+    """
+    
     def __init__(self, poses_path, video_path):
+        warnings.warn(
+            "VideoPoseDataset in visualization_utilities is deprecated. "
+            "Use badminton.data.video_pose_dataset.VideoPoseDataset instead.",
+            DeprecationWarning,
+            stacklevel=2
+        )
         self.poses_path = poses_path
         self.video_path = video_path
         self.frame_count, self.frames_per_second, self.duration, self.frame_shape = get_video_metadata(video_path)
@@ -190,18 +213,18 @@ class VideoPoseDataset:
         for r in player:
             row = r[1]
             new_row = {}
-            left_ankle = (row['left_ankle'][0], -1 * row['left_ankle'][1])
-            left_knee = (row['left_knee'][0], -1 * row['left_knee'][1])
-            left_hip = (row['left_hip'][0], -1 * row['left_hip'][1])
-            left_shoulder = (row['left_shoulder'][0], -1 * row['left_shoulder'][1])
-            left_elbow = (row['left_elbow'][0], -1 * row['left_elbow'][1])
-            left_wrist = (row['left_wrist'][0], -1 * row['left_wrist'][1])
-            right_wrist = (row['right_wrist'][0], -1 * row['right_wrist'][1])
-            right_elbow = (row['right_elbow'][0], -1 * row['right_elbow'][1])
-            right_shoulder = (row['right_shoulder'][0], -1 * row['right_shoulder'][1])
-            right_hip = (row['right_hip'][0], -1 * row['right_hip'][1])
-            right_knee = (row['right_knee'][0], -1 * row['right_knee'][1])
-            right_ankle = (row['right_ankle'][0], -1 * row['right_ankle'][1])
+            left_ankle = (row['left_ankle'][0],  row['left_ankle'][1])
+            left_knee = (row['left_knee'][0], row['left_knee'][1])
+            left_hip = (row['left_hip'][0],  row['left_hip'][1])
+            left_shoulder = (row['left_shoulder'][0],  row['left_shoulder'][1])
+            left_elbow = (row['left_elbow'][0],  row['left_elbow'][1])
+            left_wrist = (row['left_wrist'][0],  row['left_wrist'][1])
+            right_wrist = (row['right_wrist'][0],  row['right_wrist'][1])
+            right_elbow = (row['right_elbow'][0],  row['right_elbow'][1])
+            right_shoulder = (row['right_shoulder'][0],  row['right_shoulder'][1])
+            right_hip = (row['right_hip'][0],  row['right_hip'][1])
+            right_knee = (row['right_knee'][0],  row['right_knee'][1])
+            right_ankle = (row['right_ankle'][0],  row['right_ankle'][1])
 
             left_arm_orientation = classify_triplet(left_shoulder, left_elbow, left_wrist)
             left_leg_orientation = classify_triplet(left_hip, left_knee, left_ankle)
@@ -255,7 +278,7 @@ class VideoPoseDataset:
             location = "ServeLine"
         elif shot_type == "14_Smash":
             location = "BackCourt or MidCourt"
-        elif shot_type == "05_Drop":
+        elif shot_type == "05_Drop_Shot":
             location = "FrontCourt"
         elif shot_type == "07_Transitional_Slice":
             location = "BackCourt"
