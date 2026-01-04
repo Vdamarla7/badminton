@@ -1,0 +1,2945 @@
+{
+  "processing_stats": {
+    "total_files": 19,
+    "successful_processing": 19,
+    "successful_classification": 19,
+    "total_tokens": 57153,
+    "errors": []
+  },
+  "shot_type_stats": {
+    "05_Drop_Shot": {
+      "total_files": 5,
+      "successful_classifications": 5,
+      "total_frames": 166,
+      "total_tokens": 13322
+    },
+    "14_Smash": {
+      "total_files": 4,
+      "successful_classifications": 4,
+      "total_frames": 122,
+      "total_tokens": 10262
+    },
+    "13_Long_Serve": {
+      "total_files": 5,
+      "successful_classifications": 5,
+      "total_frames": 351,
+      "total_tokens": 19257
+    },
+    "00_Short_Serve": {
+      "total_files": 5,
+      "successful_classifications": 5,
+      "total_frames": 192,
+      "total_tokens": 14312
+    }
+  },
+  "detailed_results": [
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/05_Drop_Shot/2022-09-01_17-49-36_dataset_set1_058_003682_003721_B_05.csv",
+      "shot_type": "05_Drop_Shot",
+      "frame_count": 39,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"05_Drop_Shot\",\n\"confidence\": 0.7,\n\"evidence\": \"Position is in the front court which is typical for a drop shot. The right arm initial position and motion is controlled with the right arm orientation starting around P_120_120 and moving to P_150_90, which suggests a drop shot. The right torso is bent forward and there's limited rotation evident by relatively stable right torso orientations around P_270_210 to P_270_270.\"\n}\n]}",
+      "tokens_used": 2845,
+      "analysis_summary": {
+        "frame_count": 39,
+        "poselet_summary": {
+          "total_frames": 39,
+          "poselet_counts": {
+            "left_arm": {
+              "P_90_180": 1,
+              "P_30_270": 2,
+              "P_0_90": 3,
+              "P_60_0": 3,
+              "P_30_60": 1,
+              "P_60_30": 1,
+              "P_60_120": 1,
+              "P_30_90": 12,
+              "P_60_90": 9,
+              "P_30_120": 6
+            },
+            "left_leg": {
+              "P_30_90": 6,
+              "P_30_60": 5,
+              "P_90_120": 1,
+              "P_60_90": 1,
+              "P_60_120": 18,
+              "P_60_150": 4,
+              "P_30_120": 4
+            },
+            "left_torso": {
+              "P_240_270": 11,
+              "P_240_240": 2,
+              "P_270_330": 1,
+              "P_240_300": 23,
+              "P_210_300": 2
+            },
+            "right_arm": {
+              "P_120_120": 14,
+              "P_90_150": 2,
+              "P_120_150": 2,
+              "P_120_90": 19,
+              "P_120_60": 1,
+              "P_150_90": 1
+            },
+            "right_leg": {
+              "P_90_90": 12,
+              "P_120_90": 2,
+              "P_90_150": 3,
+              "P_120_120": 1,
+              "P_90_120": 21
+            },
+            "right_torso": {
+              "P_270_210": 6,
+              "P_330_210": 1,
+              "P_210_300": 3,
+              "P_270_270": 14,
+              "P_300_240": 3,
+              "P_270_240": 12
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_90",
+              12
+            ],
+            "left_leg": [
+              "P_60_120",
+              18
+            ],
+            "left_torso": [
+              "P_240_300",
+              23
+            ],
+            "right_arm": [
+              "P_120_90",
+              19
+            ],
+            "right_leg": [
+              "P_90_120",
+              21
+            ],
+            "right_torso": [
+              "P_270_270",
+              14
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "hold"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/05_Drop_Shot/2022-09-01_17-49-36_dataset_set1_034_002012_002044_B_05.csv",
+      "shot_type": "05_Drop_Shot",
+      "frame_count": 32,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"05_Drop_Shot\",\n\"confidence\": 0.65,\n\"evidence\": \"The player is at the FrontCourt, the right arm starts from P_120_120 and progresses relatively less dramatically, coupled with a consistent right torso position throughout the sequence. The left arm orientation start does not match either service style, further hinting against a serve. The pose sequence is more aligned with a drop shot.\"\n}\n]}",
+      "tokens_used": 2605,
+      "analysis_summary": {
+        "frame_count": 32,
+        "poselet_summary": {
+          "total_frames": 32,
+          "poselet_counts": {
+            "left_arm": {
+              "P_60_0": 5,
+              "P_30_30": 6,
+              "P_30_60": 1,
+              "P_60_30": 5,
+              "P_30_90": 11,
+              "P_60_60": 3,
+              "P_60_90": 1
+            },
+            "left_leg": {
+              "P_60_30": 1,
+              "P_60_60": 1,
+              "P_30_90": 10,
+              "P_60_90": 3,
+              "P_30_60": 2,
+              "P_30_120": 6,
+              "P_60_120": 9
+            },
+            "left_torso": {
+              "P_240_240": 11,
+              "P_240_270": 11,
+              "P_240_300": 9,
+              "P_210_300": 1
+            },
+            "right_arm": {
+              "P_120_120": 4,
+              "P_120_180": 11,
+              "P_120_210": 1,
+              "P_120_150": 1,
+              "P_120_90": 12,
+              "P_150_90": 1,
+              "P_150_60": 1,
+              "P_90_150": 1
+            },
+            "right_leg": {
+              "P_120_90": 11,
+              "P_90_120": 3,
+              "P_120_120": 16,
+              "P_90_150": 1,
+              "P_150_90": 1
+            },
+            "right_torso": {
+              "P_300_240": 24,
+              "P_210_300": 1,
+              "P_300_270": 4,
+              "P_270_270": 3
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_90",
+              11
+            ],
+            "left_leg": [
+              "P_30_90",
+              10
+            ],
+            "left_torso": [
+              "P_240_240",
+              11
+            ],
+            "right_arm": [
+              "P_120_90",
+              12
+            ],
+            "right_leg": [
+              "P_120_120",
+              16
+            ],
+            "right_torso": [
+              "P_300_240",
+              24
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/05_Drop_Shot/2022-09-07_18-07-54_dataset_set1_020_002514_002548_A_05.csv",
+      "shot_type": "05_Drop_Shot",
+      "frame_count": 34,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n{\n\"predictions\": [\n    {\n    \"label\": \"05_Drop_Shot\",\n    \"confidence\": 0.75,\n    \"evidence\": \"The position is in the Front Court. The right arm orientations commence near the bottom P_60_60 in the first frame and maintain a controlled upward motion through the sequence. The right torso is mostly stable. The slight bending and straightening motion of the right leg also align with a drop shot type of movement. However, there are some deviations in the orientation, hence the confidence is not absolute.\"\n    }\n]\n}",
+      "tokens_used": 2692,
+      "analysis_summary": {
+        "frame_count": 34,
+        "poselet_summary": {
+          "total_frames": 34,
+          "poselet_counts": {
+            "left_arm": {
+              "P_150_60": 2,
+              "P_120_270": 1,
+              "P_120_240": 2,
+              "P_240_120": 2,
+              "P_180_180": 3,
+              "P_180_120": 1,
+              "P_150_180": 1,
+              "P_120_210": 2,
+              "P_120_180": 1,
+              "P_120_60": 3,
+              "P_120_120": 2,
+              "P_150_120": 2,
+              "P_90_0": 3,
+              "P_30_90": 1,
+              "P_60_30": 1,
+              "P_60_0": 5,
+              "P_60_330": 1,
+              "P_90_270": 1
+            },
+            "left_leg": {
+              "P_90_150": 16,
+              "P_90_120": 7,
+              "P_120_150": 2,
+              "P_120_120": 7,
+              "P_60_150": 2
+            },
+            "left_torso": {
+              "P_270_330": 7,
+              "P_270_300": 16,
+              "P_300_300": 9,
+              "P_240_300": 1,
+              "P_240_330": 1
+            },
+            "right_arm": {
+              "P_60_60": 3,
+              "P_60_30": 5,
+              "P_60_90": 1,
+              "P_90_90": 2,
+              "P_120_90": 2,
+              "P_120_120": 4,
+              "P_150_120": 7,
+              "P_150_90": 10
+            },
+            "right_leg": {
+              "P_30_60": 2,
+              "P_60_60": 10,
+              "P_30_90": 11,
+              "P_60_120": 5,
+              "P_60_90": 4,
+              "P_30_120": 2
+            },
+            "right_torso": {
+              "P_240_300": 18,
+              "P_210_330": 2,
+              "P_240_270": 10,
+              "P_240_240": 4
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_60_0",
+              5
+            ],
+            "left_leg": [
+              "P_90_150",
+              16
+            ],
+            "left_torso": [
+              "P_270_300",
+              16
+            ],
+            "right_arm": [
+              "P_150_90",
+              10
+            ],
+            "right_leg": [
+              "P_30_90",
+              11
+            ],
+            "right_torso": [
+              "P_240_300",
+              18
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/05_Drop_Shot/2022-08-31_19-09-07_dataset_set1_030_003604_003634_A_05.csv",
+      "shot_type": "05_Drop_Shot",
+      "frame_count": 30,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n{\"predictions\": [\n{\n\"label\": \"05_Drop_Shot\",\n\"confidence\": 0.85,\n\"evidence\": \"The player is at the FrontCourt position, where drop shots are likely. In the beginning frames, the right_arm position transitions from a position not far off P_270_270 with a controlled upward adjustment. This transitions to a gentle drop, culminating in an orientation of around P_150_90. The right torso shows limited rotation, indicating a controlled forward shot, which aligns with Drop_Shot characteristics. However, as the prediction doesn't exactly match the pose sequences, the confidence is not set to 1.\"\n}\n]}",
+      "tokens_used": 2582,
+      "analysis_summary": {
+        "frame_count": 30,
+        "poselet_summary": {
+          "total_frames": 30,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_30": 5,
+              "P_60_30": 2,
+              "P_150_60": 1,
+              "P_150_30": 2,
+              "P_150_90": 1,
+              "P_120_30": 1,
+              "P_120_60": 1,
+              "P_120_120": 3,
+              "P_120_180": 4,
+              "P_120_150": 1,
+              "P_90_0": 1,
+              "P_90_30": 1,
+              "P_30_120": 1,
+              "P_60_0": 3,
+              "P_60_240": 1,
+              "P_60_150": 2
+            },
+            "left_leg": {
+              "P_90_180": 3,
+              "P_120_180": 2,
+              "P_60_150": 8,
+              "P_90_150": 9,
+              "P_120_150": 5,
+              "P_120_90": 1,
+              "P_120_120": 1,
+              "P_150_120": 1
+            },
+            "left_torso": {
+              "P_270_270": 4,
+              "P_300_270": 2,
+              "P_270_300": 8,
+              "P_240_300": 8,
+              "P_300_300": 7,
+              "P_330_330": 1
+            },
+            "right_arm": {
+              "P_30_0": 2,
+              "P_30_30": 3,
+              "P_30_60": 2,
+              "P_60_30": 1,
+              "P_60_60": 1,
+              "P_60_90": 1,
+              "P_90_60": 1,
+              "P_90_90": 2,
+              "P_120_90": 1,
+              "P_120_120": 1,
+              "P_120_150": 1,
+              "P_150_120": 8,
+              "P_150_90": 6
+            },
+            "right_leg": {
+              "P_30_60": 12,
+              "P_30_90": 4,
+              "P_30_120": 4,
+              "P_60_150": 3,
+              "P_60_90": 5,
+              "P_60_120": 2
+            },
+            "right_torso": {
+              "P_210_300": 7,
+              "P_210_330": 4,
+              "P_240_300": 5,
+              "P_240_270": 11,
+              "P_240_240": 3
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_30",
+              5
+            ],
+            "left_leg": [
+              "P_90_150",
+              9
+            ],
+            "left_torso": [
+              "P_270_300",
+              8
+            ],
+            "right_arm": [
+              "P_150_120",
+              8
+            ],
+            "right_leg": [
+              "P_30_60",
+              12
+            ],
+            "right_torso": [
+              "P_240_270",
+              11
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/05_Drop_Shot/2022-09-07_19-32-45_dataset_set1_167_014161_014192_A_05.csv",
+      "shot_type": "05_Drop_Shot",
+      "frame_count": 31,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"05_Drop_Shot\",\n\"confidence\": 0.75,\n\"evidence\": \"The player is in the FrontCourt position, combined with the right arm orientations that start from a lower position (close to P_60_30) and show a controlled swing with some wrist relaxation. The right torso is notably bent forward and shows limited rotation, which also suggests a 05_Drop_Shot. However, the motion isn't as pronounced or consistent with typical drop shots, which results in the confidence rating of 0.75.\"\n}\n]}",
+      "tokens_used": 2598,
+      "analysis_summary": {
+        "frame_count": 31,
+        "poselet_summary": {
+          "total_frames": 31,
+          "poselet_counts": {
+            "left_arm": {
+              "P_60_330": 1,
+              "P_90_330": 3,
+              "P_90_0": 1,
+              "P_90_270": 1,
+              "P_30_150": 1,
+              "P_120_0": 5,
+              "P_120_90": 4,
+              "P_120_60": 4,
+              "P_120_30": 2,
+              "P_90_90": 7,
+              "P_90_180": 2
+            },
+            "left_leg": {
+              "P_60_90": 2,
+              "P_60_120": 1,
+              "P_90_60": 3,
+              "P_60_150": 4,
+              "P_90_150": 7,
+              "P_120_150": 3,
+              "P_90_0": 1,
+              "P_60_180": 2,
+              "P_0_90": 1,
+              "P_90_120": 2,
+              "P_150_120": 4,
+              "P_120_120": 1
+            },
+            "left_torso": {
+              "P_240_300": 6,
+              "P_240_330": 3,
+              "P_270_300": 9,
+              "P_270_330": 4,
+              "P_300_330": 1,
+              "P_300_300": 3,
+              "P_180_300": 1,
+              "P_330_330": 3,
+              "P_330_300": 1
+            },
+            "right_arm": {
+              "P_60_30": 5,
+              "P_60_0": 2,
+              "P_90_30": 2,
+              "P_90_60": 1,
+              "P_120_60": 2,
+              "P_120_90": 3,
+              "P_150_90": 3,
+              "P_150_120": 9,
+              "P_120_120": 4
+            },
+            "right_leg": {
+              "P_60_90": 7,
+              "P_60_120": 2,
+              "P_60_60": 4,
+              "P_30_60": 6,
+              "P_60_150": 2,
+              "P_30_120": 3,
+              "P_30_180": 1,
+              "P_60_0": 2,
+              "P_0_30": 1,
+              "P_30_150": 1,
+              "P_90_150": 2
+            },
+            "right_torso": {
+              "P_240_300": 12,
+              "P_240_330": 1,
+              "P_240_270": 9,
+              "P_240_240": 5,
+              "P_180_210": 1,
+              "P_270_270": 1,
+              "P_270_300": 1,
+              "P_210_270": 1
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_90_90",
+              7
+            ],
+            "left_leg": [
+              "P_90_150",
+              7
+            ],
+            "left_torso": [
+              "P_270_300",
+              9
+            ],
+            "right_arm": [
+              "P_150_120",
+              9
+            ],
+            "right_leg": [
+              "P_60_90",
+              7
+            ],
+            "right_torso": [
+              "P_240_300",
+              12
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "hold"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/14_Smash/2022-09-07_19-11-05_dataset_set1_181_016670_016704_A_14.csv",
+      "shot_type": "14_Smash",
+      "frame_count": 34,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n{\"predictions\": [\n{\n\"label\": \"14_Smash\",\n\"confidence\": 0.75,\n\"evidence\": \"The player is in the BackCourt/MidCourt which is common for smashes. The right arm movements start near P_150_120 and strongly swing into low orientations around P_120_0, indicative of a typical smash motion. The right torso also shows a surge in forward rotation from around P_330_240 to P_300_270, signifying the player leaning into the shot, again a characteristic of a smash.\"\n}\n]}",
+      "tokens_used": 2694,
+      "analysis_summary": {
+        "frame_count": 34,
+        "poselet_summary": {
+          "total_frames": 34,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_120": 3,
+              "P_60_120": 2,
+              "P_60_150": 6,
+              "P_90_210": 2,
+              "P_90_240": 1,
+              "P_300_180": 1,
+              "P_120_60": 1,
+              "P_180_180": 1,
+              "P_150_120": 1,
+              "P_120_240": 3,
+              "P_240_180": 1,
+              "P_60_180": 2,
+              "P_90_180": 2,
+              "P_120_270": 2,
+              "P_120_330": 1,
+              "P_150_90": 1,
+              "P_150_180": 1,
+              "P_120_180": 1,
+              "P_90_90": 1,
+              "P_60_90": 1
+            },
+            "left_leg": {
+              "P_150_90": 1,
+              "P_150_60": 2,
+              "P_300_90": 2,
+              "P_150_30": 1,
+              "P_120_60": 2,
+              "P_90_90": 9,
+              "P_90_60": 4,
+              "P_30_120": 1,
+              "P_120_30": 1,
+              "P_300_60": 1,
+              "P_180_120": 1,
+              "P_300_150": 1,
+              "P_60_60": 3,
+              "P_60_90": 2,
+              "P_60_120": 1,
+              "P_90_150": 2
+            },
+            "left_torso": {
+              "P_330_300": 3,
+              "P_120_270": 1,
+              "P_330_270": 2,
+              "P_300_270": 2,
+              "P_270_300": 10,
+              "P_270_330": 5,
+              "P_240_300": 2,
+              "P_120_300": 3,
+              "P_0_270": 1,
+              "P_240_330": 5
+            },
+            "right_arm": {
+              "P_150_120": 3,
+              "P_120_180": 4,
+              "P_120_30": 3,
+              "P_180_150": 1,
+              "P_150_240": 1,
+              "P_180_180": 1,
+              "P_120_120": 1,
+              "P_180_210": 1,
+              "P_150_270": 1,
+              "P_30_120": 1,
+              "P_270_90": 1,
+              "P_240_90": 2,
+              "P_210_270": 1,
+              "P_180_330": 1,
+              "P_90_270": 1,
+              "P_150_30": 1,
+              "P_150_60": 2,
+              "P_120_60": 6,
+              "P_120_0": 2
+            },
+            "right_leg": {
+              "P_150_30": 3,
+              "P_120_30": 3,
+              "P_120_60": 3,
+              "P_90_60": 2,
+              "P_60_90": 1,
+              "P_90_0": 1,
+              "P_240_120": 2,
+              "P_330_150": 1,
+              "P_90_90": 1,
+              "P_120_90": 6,
+              "P_150_90": 1,
+              "P_120_120": 10
+            },
+            "right_torso": {
+              "P_330_240": 5,
+              "P_300_240": 1,
+              "P_270_270": 2,
+              "P_240_270": 1,
+              "P_0_270": 1,
+              "P_330_300": 1,
+              "P_270_330": 1,
+              "P_60_300": 1,
+              "P_60_270": 1,
+              "P_150_300": 1,
+              "P_300_330": 2,
+              "P_270_300": 1,
+              "P_300_300": 7,
+              "P_330_330": 1,
+              "P_330_270": 2,
+              "P_300_270": 6
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_60_150",
+              6
+            ],
+            "left_leg": [
+              "P_90_90",
+              9
+            ],
+            "left_torso": [
+              "P_270_300",
+              10
+            ],
+            "right_arm": [
+              "P_120_60",
+              6
+            ],
+            "right_leg": [
+              "P_120_120",
+              10
+            ],
+            "right_torso": [
+              "P_300_300",
+              7
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/14_Smash/2022-09-07_19-24-02_dataset_set1_053_005436_005462_A_14.csv",
+      "shot_type": "14_Smash",
+      "frame_count": 26,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"14_Smash\",\n\"confidence\": 0.8,\n\"evidence\": \"The right arm starts at a high orientation, which quickly drops to a lower orientation by frame 4. Combined with the context of the Position (MidCourt/BackCourt), this suggests a Smash. The confidence is not maximum due to the somewhat ambiguous trajectory.\"\n}\n]}",
+      "tokens_used": 2402,
+      "analysis_summary": {
+        "frame_count": 26,
+        "poselet_summary": {
+          "total_frames": 26,
+          "poselet_counts": {
+            "left_arm": {
+              "P_120_270": 6,
+              "P_90_180": 2,
+              "P_90_90": 2,
+              "P_30_150": 1,
+              "P_120_90": 1,
+              "P_120_60": 1,
+              "P_150_60": 2,
+              "P_120_0": 5,
+              "P_150_30": 2,
+              "P_30_120": 1,
+              "P_60_90": 2,
+              "P_60_30": 1
+            },
+            "left_leg": {
+              "P_60_30": 2,
+              "P_60_60": 18,
+              "P_30_90": 1,
+              "P_60_90": 1,
+              "P_60_120": 4
+            },
+            "left_torso": {
+              "P_240_330": 2,
+              "P_240_300": 24
+            },
+            "right_arm": {
+              "P_210_300": 2,
+              "P_240_90": 1,
+              "P_150_60": 3,
+              "P_150_90": 6,
+              "P_120_90": 1,
+              "P_120_60": 12,
+              "P_150_120": 1
+            },
+            "right_leg": {
+              "P_120_120": 21,
+              "P_150_120": 4,
+              "P_120_180": 1
+            },
+            "right_torso": {
+              "P_300_300": 23,
+              "P_330_300": 1,
+              "P_300_270": 2
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_120_270",
+              6
+            ],
+            "left_leg": [
+              "P_60_60",
+              18
+            ],
+            "left_torso": [
+              "P_240_300",
+              24
+            ],
+            "right_arm": [
+              "P_120_60",
+              12
+            ],
+            "right_leg": [
+              "P_120_120",
+              21
+            ],
+            "right_torso": [
+              "P_300_300",
+              23
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/14_Smash/2022-08-31_19-48-28_dataset_set1_128_010645_010671_B_14.csv",
+      "shot_type": "14_Smash",
+      "frame_count": 26,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"14_Smash\",\n\"confidence\": 0.92,\n\"evidence\": \"The starting positions of the right arm in the first few frames are oriented high (~P_90_90), followed by a sharp decrease in orientation angles indicating a fast downward swing which is a signature move of a Smash shot. Additionally, the sharp rotation of the right torso also evidences the decision. The position of the player (BackCourt or MidCourt) also increases probability for a smash.\"\n}\n]}",
+      "tokens_used": 2429,
+      "analysis_summary": {
+        "frame_count": 26,
+        "poselet_summary": {
+          "total_frames": 26,
+          "poselet_counts": {
+            "left_arm": {
+              "P_90_60": 1,
+              "P_60_60": 1,
+              "P_90_270": 3,
+              "P_90_210": 1,
+              "P_90_0": 5,
+              "P_90_300": 1,
+              "P_30_180": 1,
+              "P_30_150": 2,
+              "P_90_330": 2,
+              "P_60_120": 1,
+              "P_60_180": 2,
+              "P_90_90": 5,
+              "P_60_150": 1
+            },
+            "left_leg": {
+              "P_60_60": 3,
+              "P_30_60": 2,
+              "P_30_90": 4,
+              "P_30_120": 2,
+              "P_60_120": 4,
+              "P_60_150": 2,
+              "P_120_120": 1,
+              "P_90_150": 2,
+              "P_120_150": 2,
+              "P_90_180": 1,
+              "P_150_150": 1,
+              "P_90_60": 1,
+              "P_90_90": 1
+            },
+            "left_torso": {
+              "P_240_300": 14,
+              "P_240_180": 1,
+              "P_240_330": 2,
+              "P_300_300": 3,
+              "P_270_330": 2,
+              "P_330_330": 1,
+              "P_270_300": 3
+            },
+            "right_arm": {
+              "P_240_30": 1,
+              "P_120_120": 1,
+              "P_90_330": 1,
+              "P_90_0": 3,
+              "P_90_30": 1,
+              "P_90_60": 2,
+              "P_90_90": 3,
+              "P_120_60": 4,
+              "P_150_60": 9,
+              "P_150_90": 1
+            },
+            "right_leg": {
+              "P_120_120": 6,
+              "P_150_120": 2,
+              "P_120_150": 4,
+              "P_60_90": 2,
+              "P_90_150": 2,
+              "P_90_120": 1,
+              "P_60_120": 3,
+              "P_60_60": 1,
+              "P_30_60": 1,
+              "P_120_30": 1,
+              "P_120_180": 2,
+              "P_90_210": 1
+            },
+            "right_torso": {
+              "P_300_300": 10,
+              "P_300_180": 1,
+              "P_330_300": 1,
+              "P_300_330": 1,
+              "P_240_330": 1,
+              "P_270_330": 3,
+              "P_240_300": 4,
+              "P_240_270": 2,
+              "P_300_270": 2,
+              "P_270_270": 1
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_90_0",
+              5
+            ],
+            "left_leg": [
+              "P_30_90",
+              4
+            ],
+            "left_torso": [
+              "P_240_300",
+              14
+            ],
+            "right_arm": [
+              "P_150_60",
+              9
+            ],
+            "right_leg": [
+              "P_120_120",
+              6
+            ],
+            "right_torso": [
+              "P_300_300",
+              10
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/14_Smash/2022-09-07_17-46-41_dataset_set1_092_006923_006959_B_14.csv",
+      "shot_type": "14_Smash",
+      "frame_count": 36,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"14_Smash\",\n\"confidence\": 0.65,\n\"evidence\": \"The right arm orientations begin at a high angle and quickly drop to a low angle, indicative of a fast, steep downward arm motion that is typical for a smash. The right torso also showed some rotation, further suggesting a smash. The position of the court being at mid-court or back-court is also a common context for smash shots.\"\n}\n]}",
+      "tokens_used": 2737,
+      "analysis_summary": {
+        "frame_count": 36,
+        "poselet_summary": {
+          "total_frames": 36,
+          "poselet_counts": {
+            "left_arm": {
+              "P_60_300": 2,
+              "P_90_300": 1,
+              "P_60_270": 1,
+              "P_90_270": 1,
+              "P_0_180": 1,
+              "P_120_270": 2,
+              "P_120_0": 2,
+              "P_120_180": 2,
+              "P_90_90": 2,
+              "P_90_180": 8,
+              "P_90_150": 3,
+              "P_120_90": 1,
+              "P_60_150": 2,
+              "P_60_180": 2,
+              "P_90_0": 4,
+              "P_30_150": 2
+            },
+            "left_leg": {
+              "P_60_30": 1,
+              "P_60_90": 5,
+              "P_30_120": 4,
+              "P_30_90": 4,
+              "P_30_150": 1,
+              "P_60_120": 1,
+              "P_90_150": 4,
+              "P_120_90": 1,
+              "P_120_120": 11,
+              "P_150_120": 1,
+              "P_90_180": 3
+            },
+            "left_torso": {
+              "P_240_300": 13,
+              "P_240_330": 2,
+              "P_210_330": 1,
+              "P_270_330": 6,
+              "P_300_300": 12,
+              "P_330_300": 1,
+              "P_270_300": 1
+            },
+            "right_arm": {
+              "P_240_210": 1,
+              "P_210_270": 2,
+              "P_210_240": 1,
+              "P_180_270": 1,
+              "P_120_270": 1,
+              "P_150_0": 1,
+              "P_150_90": 9,
+              "P_150_60": 3,
+              "P_120_60": 5,
+              "P_120_30": 1,
+              "P_120_90": 1,
+              "P_120_0": 1,
+              "P_150_120": 9
+            },
+            "right_leg": {
+              "P_120_90": 5,
+              "P_120_120": 18,
+              "P_90_150": 3,
+              "P_90_120": 5,
+              "P_90_90": 3,
+              "P_0_150": 1,
+              "P_60_120": 1
+            },
+            "right_torso": {
+              "P_300_300": 8,
+              "P_300_270": 15,
+              "P_270_270": 11,
+              "P_270_240": 1,
+              "P_210_270": 1
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_90_180",
+              8
+            ],
+            "left_leg": [
+              "P_120_120",
+              11
+            ],
+            "left_torso": [
+              "P_240_300",
+              13
+            ],
+            "right_arm": [
+              "P_150_90",
+              9
+            ],
+            "right_leg": [
+              "P_120_120",
+              18
+            ],
+            "right_torso": [
+              "P_300_270",
+              15
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/13_Long_Serve/2022-09-01_17-49-36_dataset_set1_032_001908_001983_B_13.csv",
+      "shot_type": "13_Long_Serve",
+      "frame_count": 75,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n{\"predictions\": [\n{\n\"label\": \"13_Long_Serve\",\n\"confidence\": 0.9,\n\"evidence\": \"The player is on the Serve Line and the starting orientation of their Right Arm in the first few frames is close to P_120_210 which is likened to the initial pose for the long serve example. A swift motion upward follows this start, which is evidenced in frame 8 to 13 showing the right arm orientation extending towards  P_180_90. Additionally, the left arm from frame 1 to 14 has no dramatic change in movement indicating a generally stable torso. All these are signs typical of a long serve shot.\"\n}\n]}",
+      "tokens_used": 4024,
+      "analysis_summary": {
+        "frame_count": 75,
+        "poselet_summary": {
+          "total_frames": 75,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_180": 13,
+              "P_60_210": 4,
+              "P_0_180": 5,
+              "P_0_150": 2,
+              "P_30_120": 3,
+              "P_30_90": 2,
+              "P_60_330": 4,
+              "P_330_150": 2,
+              "P_30_30": 5,
+              "P_30_0": 3,
+              "P_30_300": 1,
+              "P_30_270": 2,
+              "P_0_270": 3,
+              "P_0_0": 1,
+              "P_0_240": 4,
+              "P_0_210": 13,
+              "P_30_210": 3,
+              "P_60_240": 1,
+              "P_60_180": 1,
+              "P_60_90": 3
+            },
+            "left_leg": {
+              "P_90_90": 49,
+              "P_120_90": 3,
+              "P_90_120": 5,
+              "P_60_90": 9,
+              "P_60_60": 3,
+              "P_60_120": 1,
+              "P_30_120": 2,
+              "P_30_150": 1,
+              "P_0_120": 1,
+              "P_60_270": 1
+            },
+            "left_torso": {
+              "P_270_240": 20,
+              "P_300_240": 3,
+              "P_270_270": 25,
+              "P_240_300": 16,
+              "P_240_270": 1,
+              "P_270_300": 9,
+              "P_210_300": 1
+            },
+            "right_arm": {
+              "P_120_210": 7,
+              "P_180_90": 3,
+              "P_60_210": 2,
+              "P_180_180": 1,
+              "P_150_180": 1,
+              "P_150_270": 2,
+              "P_60_180": 1,
+              "P_150_30": 1,
+              "P_30_120": 2,
+              "P_90_90": 3,
+              "P_60_120": 1,
+              "P_90_330": 1,
+              "P_90_300": 2,
+              "P_60_270": 3,
+              "P_180_0": 2,
+              "P_0_330": 5,
+              "P_0_180": 1,
+              "P_300_90": 1,
+              "P_30_180": 1,
+              "P_60_330": 1,
+              "P_60_0": 1,
+              "P_90_0": 2,
+              "P_120_120": 9,
+              "P_120_180": 5,
+              "P_150_120": 11,
+              "P_120_150": 1,
+              "P_150_90": 2,
+              "P_120_90": 3
+            },
+            "right_leg": {
+              "P_90_90": 28,
+              "P_120_60": 10,
+              "P_120_90": 7,
+              "P_90_120": 20,
+              "P_120_120": 7,
+              "P_90_150": 2,
+              "P_90_210": 1
+            },
+            "right_torso": {
+              "P_270_240": 25,
+              "P_300_240": 20,
+              "P_270_270": 26,
+              "P_300_270": 4
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_180",
+              13
+            ],
+            "left_leg": [
+              "P_90_90",
+              49
+            ],
+            "left_torso": [
+              "P_270_270",
+              25
+            ],
+            "right_arm": [
+              "P_150_120",
+              11
+            ],
+            "right_leg": [
+              "P_90_90",
+              28
+            ],
+            "right_torso": [
+              "P_270_270",
+              26
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/13_Long_Serve/2022-09-07_17-56-47_dataset_set1_124_010404_010480_B_13.csv",
+      "shot_type": "13_Long_Serve",
+      "frame_count": 76,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "{\"predictions\": [\n{\n\"label\": \"13_Long_Serve\",\n\"confidence\": 0.85,\n\"evidence\": \"The player is initially located on the ServeLine which suggests a type of serve. For several of the first frames, the right arm starts near P_120_180, later heading to higher orientations which resembles an upward swinging motion typical to a long serve. Additionally, the left arm shows an opening movement which agrees with the clues for a long serve. The torso remains largely stable throughout. So, given the position context and these movements, we can confidently predict a long serve.\"\n}\n]}",
+      "tokens_used": 4040,
+      "analysis_summary": {
+        "frame_count": 76,
+        "poselet_summary": {
+          "total_frames": 76,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_180": 5,
+              "P_0_180": 4,
+              "P_60_210": 2,
+              "P_0_90": 4,
+              "P_60_300": 3,
+              "P_300_60": 1,
+              "P_0_270": 2,
+              "P_0_0": 7,
+              "P_30_300": 2,
+              "P_30_0": 1,
+              "P_60_330": 2,
+              "P_60_0": 3,
+              "P_60_180": 5,
+              "P_30_120": 30,
+              "P_60_90": 2,
+              "P_90_210": 1,
+              "P_30_150": 1,
+              "P_0_120": 1
+            },
+            "left_leg": {
+              "P_90_90": 26,
+              "P_90_120": 16,
+              "P_90_60": 4,
+              "P_60_90": 16,
+              "P_60_60": 8,
+              "P_120_90": 2,
+              "P_30_60": 4
+            },
+            "left_torso": {
+              "P_270_270": 38,
+              "P_270_300": 8,
+              "P_240_300": 16,
+              "P_240_270": 12,
+              "P_300_300": 2
+            },
+            "right_arm": {
+              "P_120_180": 14,
+              "P_150_120": 3,
+              "P_150_60": 3,
+              "P_90_180": 1,
+              "P_30_150": 1,
+              "P_180_30": 1,
+              "P_60_300": 7,
+              "P_0_300": 3,
+              "P_300_30": 2,
+              "P_0_330": 3,
+              "P_60_330": 2,
+              "P_90_330": 3,
+              "P_90_0": 2,
+              "P_120_0": 3,
+              "P_120_60": 3,
+              "P_150_90": 18,
+              "P_120_120": 3,
+              "P_150_0": 1,
+              "P_120_90": 3
+            },
+            "right_leg": {
+              "P_90_90": 14,
+              "P_90_150": 15,
+              "P_150_60": 2,
+              "P_120_90": 10,
+              "P_120_150": 3,
+              "P_120_120": 19,
+              "P_90_120": 13
+            },
+            "right_torso": {
+              "P_270_240": 18,
+              "P_300_240": 20,
+              "P_270_270": 24,
+              "P_300_270": 14
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_120",
+              30
+            ],
+            "left_leg": [
+              "P_90_90",
+              26
+            ],
+            "left_torso": [
+              "P_270_270",
+              38
+            ],
+            "right_arm": [
+              "P_150_90",
+              18
+            ],
+            "right_leg": [
+              "P_120_120",
+              19
+            ],
+            "right_torso": [
+              "P_270_270",
+              24
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/13_Long_Serve/2022-09-07_17-56-47_dataset_set1_197_017179_017253_B_13.csv",
+      "shot_type": "13_Long_Serve",
+      "frame_count": 74,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"13_Long_Serve\",\n\"confidence\": 0.85,\n\"evidence\": \"The player is at ServeLine position, the right_arm movements start from a higher angle and have a large upward swing, extending to higher orientations (near P_120_180) which indicates a Long Serve. There are corresponding torso movements as well giving us confidence in this prediction.\"\n}\n]}",
+      "tokens_used": 3939,
+      "analysis_summary": {
+        "frame_count": 74,
+        "poselet_summary": {
+          "total_frames": 74,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_180": 2,
+              "P_60_210": 7,
+              "P_90_240": 4,
+              "P_180_180": 1,
+              "P_0_180": 4,
+              "P_0_90": 5,
+              "P_0_270": 4,
+              "P_0_240": 5,
+              "P_0_0": 2,
+              "P_30_270": 5,
+              "P_60_330": 1,
+              "P_60_180": 14,
+              "P_30_120": 17,
+              "P_90_0": 2,
+              "P_30_150": 1
+            },
+            "left_leg": {
+              "P_90_120": 14,
+              "P_120_90": 10,
+              "P_90_150": 2,
+              "P_90_90": 9,
+              "P_90_60": 5,
+              "P_60_90": 10,
+              "P_60_60": 21,
+              "P_60_30": 3
+            },
+            "left_torso": {
+              "P_270_270": 30,
+              "P_300_270": 4,
+              "P_300_240": 6,
+              "P_240_300": 12,
+              "P_240_270": 22
+            },
+            "right_arm": {
+              "P_120_180": 16,
+              "P_120_120": 17,
+              "P_150_90": 7,
+              "P_90_150": 1,
+              "P_90_180": 1,
+              "P_90_270": 2,
+              "P_180_0": 1,
+              "P_90_300": 3,
+              "P_270_0": 1,
+              "P_0_300": 2,
+              "P_270_60": 2,
+              "P_300_0": 2,
+              "P_300_90": 1,
+              "P_300_30": 1,
+              "P_60_300": 3,
+              "P_60_330": 1,
+              "P_90_330": 2,
+              "P_90_0": 1,
+              "P_150_30": 1,
+              "P_90_90": 1,
+              "P_120_60": 3,
+              "P_150_60": 5
+            },
+            "right_leg": {
+              "P_60_60": 12,
+              "P_90_30": 9,
+              "P_60_90": 1,
+              "P_30_120": 1,
+              "P_150_30": 2,
+              "P_90_90": 1,
+              "P_90_150": 7,
+              "P_120_150": 7,
+              "P_120_120": 19,
+              "P_150_120": 3,
+              "P_120_90": 12
+            },
+            "right_torso": {
+              "P_240_240": 14,
+              "P_270_240": 10,
+              "P_270_270": 9,
+              "P_300_240": 19,
+              "P_300_270": 22
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_120",
+              17
+            ],
+            "left_leg": [
+              "P_60_60",
+              21
+            ],
+            "left_torso": [
+              "P_270_270",
+              30
+            ],
+            "right_arm": [
+              "P_120_120",
+              17
+            ],
+            "right_leg": [
+              "P_120_120",
+              19
+            ],
+            "right_torso": [
+              "P_300_270",
+              22
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/13_Long_Serve/2022-09-01_17-49-36_dataset_set1_201_014809_014870_B_13.csv",
+      "shot_type": "13_Long_Serve",
+      "frame_count": 61,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "{\"predictions\": [\n{\n\"label\": \"00_Short_Serve\",\n\"confidence\": 0.8,\n\"evidence\": \"Position at ServeLine supports the Serve prediction. Right-arm frames (e.g., t0:P_90_210, t1:P_90_210) start close to P_210_330 and demonstrate very slight movement which is characteristic of short serves. The left-arm (e.g., t0:P_30_180, t1:P_30_180) starts close to P_330_210. The slight differences in the starting angles lower confidence to 0.8.\"\n}\n]}",
+      "tokens_used": 3565,
+      "analysis_summary": {
+        "frame_count": 61,
+        "poselet_summary": {
+          "total_frames": 61,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_180": 3,
+              "P_60_180": 3,
+              "P_90_210": 13,
+              "P_90_180": 1,
+              "P_30_120": 12,
+              "P_120_210": 3,
+              "P_60_120": 1,
+              "P_120_180": 1,
+              "P_30_90": 14,
+              "P_300_60": 1,
+              "P_30_270": 1,
+              "P_60_0": 4,
+              "P_60_30": 3,
+              "P_60_90": 1
+            },
+            "left_leg": {
+              "P_30_150": 1,
+              "P_120_30": 2,
+              "P_60_30": 2,
+              "P_60_120": 1,
+              "P_90_30": 4,
+              "P_90_120": 3,
+              "P_90_150": 1,
+              "P_270_90": 1,
+              "P_120_60": 5,
+              "P_150_30": 1,
+              "P_120_90": 3,
+              "P_210_90": 1,
+              "P_150_90": 1,
+              "P_90_90": 24,
+              "P_60_90": 9,
+              "P_60_60": 2
+            },
+            "left_torso": {
+              "P_270_240": 4,
+              "P_300_240": 4,
+              "P_240_240": 1,
+              "P_240_270": 2,
+              "P_270_270": 21,
+              "P_90_270": 1,
+              "P_330_270": 4,
+              "P_300_270": 4,
+              "P_90_240": 1,
+              "P_240_300": 11,
+              "P_270_300": 8
+            },
+            "right_arm": {
+              "P_90_210": 4,
+              "P_30_180": 5,
+              "P_60_180": 4,
+              "P_150_180": 6,
+              "P_90_240": 1,
+              "P_120_180": 5,
+              "P_120_210": 1,
+              "P_90_180": 2,
+              "P_120_270": 1,
+              "P_270_30": 2,
+              "P_90_270": 3,
+              "P_90_60": 2,
+              "P_330_180": 1,
+              "P_300_30": 1,
+              "P_300_90": 1,
+              "P_180_0": 2,
+              "P_90_300": 2,
+              "P_60_270": 1,
+              "P_60_300": 1,
+              "P_90_330": 1,
+              "P_90_0": 2,
+              "P_120_60": 1,
+              "P_150_60": 1,
+              "P_120_90": 1,
+              "P_120_120": 3,
+              "P_150_120": 7
+            },
+            "right_leg": {
+              "P_150_120": 1,
+              "P_90_30": 3,
+              "P_60_30": 4,
+              "P_120_30": 4,
+              "P_120_90": 13,
+              "P_90_60": 6,
+              "P_330_90": 1,
+              "P_120_60": 8,
+              "P_150_30": 1,
+              "P_60_60": 1,
+              "P_150_60": 2,
+              "P_60_120": 1,
+              "P_90_150": 2,
+              "P_120_120": 1,
+              "P_90_120": 1,
+              "P_90_90": 12
+            },
+            "right_torso": {
+              "P_330_270": 5,
+              "P_270_240": 11,
+              "P_240_270": 4,
+              "P_240_240": 2,
+              "P_300_240": 20,
+              "P_270_330": 1,
+              "P_90_270": 1,
+              "P_330_300": 3,
+              "P_270_270": 12,
+              "P_300_270": 2
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_90",
+              14
+            ],
+            "left_leg": [
+              "P_90_90",
+              24
+            ],
+            "left_torso": [
+              "P_270_270",
+              21
+            ],
+            "right_arm": [
+              "P_150_120",
+              7
+            ],
+            "right_leg": [
+              "P_120_90",
+              13
+            ],
+            "right_torso": [
+              "P_300_240",
+              20
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/13_Long_Serve/2022-09-07_17-56-47_dataset_set1_101_008290_008355_B_13.csv",
+      "shot_type": "13_Long_Serve",
+      "frame_count": 65,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output: \n{\n\"predictions\": [\n{\n\"label\": \"00_Short_Serve\",\n\"confidence\": 0.65,\n\"evidence\": \"The player is in the ServeLine position and has a right_arm that starts with an orientation close to the P_120_180 and then transitions to several changes but less dynamic compared to a long serve action. The right torso movement is stable with minimal rotation, matching the typical pose sequence of a short serve. Confidence is not higher because there is significant variation in the orientation of the right arm throughout the sequence, indicating a possible variation in serve technique.\"\n}\n]\n}",
+      "tokens_used": 3689,
+      "analysis_summary": {
+        "frame_count": 65,
+        "poselet_summary": {
+          "total_frames": 65,
+          "poselet_counts": {
+            "left_arm": {
+              "P_0_180": 7,
+              "P_0_210": 1,
+              "P_0_240": 3,
+              "P_0_270": 7,
+              "P_30_270": 8,
+              "P_30_180": 1,
+              "P_60_180": 5,
+              "P_30_150": 19,
+              "P_30_120": 14
+            },
+            "left_leg": {
+              "P_90_120": 11,
+              "P_120_90": 1,
+              "P_90_150": 2,
+              "P_90_90": 11,
+              "P_90_60": 6,
+              "P_60_90": 18,
+              "P_60_60": 13,
+              "P_60_120": 3
+            },
+            "left_torso": {
+              "P_270_270": 30,
+              "P_300_270": 1,
+              "P_240_300": 31,
+              "P_240_270": 3
+            },
+            "right_arm": {
+              "P_120_180": 4,
+              "P_120_90": 6,
+              "P_90_180": 3,
+              "P_180_30": 1,
+              "P_180_0": 2,
+              "P_240_0": 4,
+              "P_270_0": 1,
+              "P_300_0": 3,
+              "P_270_30": 2,
+              "P_90_300": 5,
+              "P_90_330": 3,
+              "P_90_0": 4,
+              "P_120_60": 2,
+              "P_150_90": 6,
+              "P_120_120": 9,
+              "P_150_120": 8,
+              "P_120_150": 1,
+              "P_150_60": 1
+            },
+            "right_leg": {
+              "P_30_120": 4,
+              "P_60_90": 6,
+              "P_90_60": 1,
+              "P_60_150": 1,
+              "P_90_90": 2,
+              "P_90_120": 10,
+              "P_90_150": 8,
+              "P_120_120": 23,
+              "P_120_150": 5,
+              "P_120_90": 5
+            },
+            "right_torso": {
+              "P_240_240": 8,
+              "P_210_240": 3,
+              "P_270_240": 2,
+              "P_270_270": 19,
+              "P_300_240": 8,
+              "P_300_270": 25
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_150",
+              19
+            ],
+            "left_leg": [
+              "P_60_90",
+              18
+            ],
+            "left_torso": [
+              "P_240_300",
+              31
+            ],
+            "right_arm": [
+              "P_120_120",
+              9
+            ],
+            "right_leg": [
+              "P_120_120",
+              23
+            ],
+            "right_torso": [
+              "P_300_270",
+              25
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/00_Short_Serve/2022-09-07_19-24-02_dataset_set1_025_002308_002360_A_00.csv",
+      "shot_type": "00_Short_Serve",
+      "frame_count": 52,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"13_Long_Serve\",\n\"confidence\": 0.7,\n\"evidence\": \"This is predicted to be a long serve. This is based on the data starting at the ServeLine, indicating a serve is likely. The right arm motions from frames 1 to 3 (P_150_90) don't align closely with any known serve shots, but by frame 4 (P_120_150), the arm orientation is more consistent with a larger upward swing, indicative of a long serve. The right arm motion remains consistent through to the final frame. The right torso is quite stable, adding confidence to this prediction. However, the initial arm poses were not a close match for a long serve, slightly reducing confidence.\"\n}\n]}",
+      "tokens_used": 3309,
+      "analysis_summary": {
+        "frame_count": 52,
+        "poselet_summary": {
+          "total_frames": 52,
+          "poselet_counts": {
+            "left_arm": {
+              "P_60_0": 18,
+              "P_60_330": 5,
+              "P_30_0": 17,
+              "P_30_30": 3,
+              "P_30_60": 1,
+              "P_60_30": 3,
+              "P_30_90": 2,
+              "P_90_180": 1,
+              "P_120_300": 1,
+              "P_120_120": 1
+            },
+            "left_leg": {
+              "P_120_120": 16,
+              "P_120_90": 11,
+              "P_90_150": 13,
+              "P_90_120": 2,
+              "P_60_150": 6,
+              "P_60_120": 4
+            },
+            "left_torso": {
+              "P_300_270": 3,
+              "P_300_300": 24,
+              "P_270_300": 14,
+              "P_270_270": 1,
+              "P_240_300": 9,
+              "P_240_330": 1
+            },
+            "right_arm": {
+              "P_150_90": 14,
+              "P_120_150": 10,
+              "P_150_60": 5,
+              "P_150_30": 8,
+              "P_120_0": 8,
+              "P_120_60": 6,
+              "P_150_120": 1
+            },
+            "right_leg": {
+              "P_90_90": 31,
+              "P_60_120": 5,
+              "P_90_120": 9,
+              "P_90_150": 5,
+              "P_60_150": 2
+            },
+            "right_torso": {
+              "P_270_240": 6,
+              "P_270_270": 39,
+              "P_240_270": 7
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_60_0",
+              18
+            ],
+            "left_leg": [
+              "P_120_120",
+              16
+            ],
+            "left_torso": [
+              "P_300_300",
+              24
+            ],
+            "right_arm": [
+              "P_150_90",
+              14
+            ],
+            "right_leg": [
+              "P_90_90",
+              31
+            ],
+            "right_torso": [
+              "P_270_270",
+              39
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/00_Short_Serve/2022-09-07_19-02-20_dataset_set1_192_014328_014366_A_00.csv",
+      "shot_type": "00_Short_Serve",
+      "frame_count": 38,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n{\"predictions\": [\n{\n\"label\": \"00_Short_Serve\",\n\"confidence\": 0.75,\n\"evidence\": \"This shot is performed from the ServeLine, which favors serve type shots. The right arm starts in a position resembling P_150_60, which is somewhat near to the typical starting position for Short Serve. However, it does not get closer to the ideal position of P_210_330, and the left arm position also doesn't present a strong match, hence the confidence is moderate. The right torso remains stable, favouring a serve shot. Due to lack of significant arm motion or strong matching starting positions, it's challenging to confidently separate between short serve and long serve, but short serve is currently the best estimate.\"\n}\n]}",
+      "tokens_used": 2858,
+      "analysis_summary": {
+        "frame_count": 38,
+        "poselet_summary": {
+          "total_frames": 38,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_60": 3,
+              "P_30_30": 5,
+              "P_60_0": 8,
+              "P_30_90": 6,
+              "P_30_0": 2,
+              "P_0_60": 1,
+              "P_30_300": 5,
+              "P_30_270": 1,
+              "P_60_330": 1,
+              "P_30_180": 1,
+              "P_60_210": 1,
+              "P_30_150": 4
+            },
+            "left_leg": {
+              "P_90_150": 22,
+              "P_120_120": 5,
+              "P_60_150": 5,
+              "P_60_120": 6
+            },
+            "left_torso": {
+              "P_270_300": 22,
+              "P_300_300": 5,
+              "P_240_300": 9,
+              "P_240_330": 2
+            },
+            "right_arm": {
+              "P_150_60": 23,
+              "P_120_0": 8,
+              "P_120_180": 1,
+              "P_120_60": 4,
+              "P_150_30": 1,
+              "P_120_30": 1
+            },
+            "right_leg": {
+              "P_90_90": 22,
+              "P_90_120": 10,
+              "P_120_120": 6
+            },
+            "right_torso": {
+              "P_270_270": 30,
+              "P_270_300": 2,
+              "P_300_270": 6
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_60_0",
+              8
+            ],
+            "left_leg": [
+              "P_90_150",
+              22
+            ],
+            "left_torso": [
+              "P_270_300",
+              22
+            ],
+            "right_arm": [
+              "P_150_60",
+              23
+            ],
+            "right_leg": [
+              "P_90_90",
+              22
+            ],
+            "right_torso": [
+              "P_270_270",
+              30
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/00_Short_Serve/2022-09-07_19-24-02_dataset_set1_003_000480_000514_A_00.csv",
+      "shot_type": "00_Short_Serve",
+      "frame_count": 34,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"00_Short_Serve\",\n\"confidence\": 0.6,\n\"evidence\": \"The player is at the ServeLine and the right arm starts in an orientation close to P_150_90 and doesn't have a large upward movement but more of a controlled swing throughout the sequence. Right torso remains mostly stable, hinting a minimal rotation which is more typical for a short serve. Although initial right arm position isn't the typical P_210_330 for a short serve, the overall movement matches short serve characteristics. This prediction is made with a moderate confidence due to the discrepancy in the initial right arm orientation.\"\n}\n]}",
+      "tokens_used": 2710,
+      "analysis_summary": {
+        "frame_count": 34,
+        "poselet_summary": {
+          "total_frames": 34,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_150": 1,
+              "P_60_180": 1,
+              "P_30_180": 2,
+              "P_60_240": 1,
+              "P_60_270": 9,
+              "P_30_120": 6,
+              "P_30_90": 5,
+              "P_60_90": 1,
+              "P_60_30": 5,
+              "P_60_60": 3
+            },
+            "left_leg": {
+              "P_90_150": 16,
+              "P_90_180": 1,
+              "P_90_120": 4,
+              "P_90_90": 9,
+              "P_60_120": 1,
+              "P_60_90": 3
+            },
+            "left_torso": {
+              "P_270_300": 18,
+              "P_270_270": 12,
+              "P_240_300": 4
+            },
+            "right_arm": {
+              "P_150_90": 7,
+              "P_150_120": 9,
+              "P_150_180": 1,
+              "P_120_120": 3,
+              "P_120_60": 4,
+              "P_150_60": 9,
+              "P_120_90": 1
+            },
+            "right_leg": {
+              "P_90_90": 26,
+              "P_30_120": 2,
+              "P_90_120": 6
+            },
+            "right_torso": {
+              "P_270_240": 18,
+              "P_270_270": 16
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_60_270",
+              9
+            ],
+            "left_leg": [
+              "P_90_150",
+              16
+            ],
+            "left_torso": [
+              "P_270_300",
+              18
+            ],
+            "right_arm": [
+              "P_150_120",
+              9
+            ],
+            "right_leg": [
+              "P_90_90",
+              26
+            ],
+            "right_torso": [
+              "P_270_240",
+              18
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/00_Short_Serve/2022-09-07_19-02-20_dataset_set1_023_001890_001927_A_00.csv",
+      "shot_type": "00_Short_Serve",
+      "frame_count": 37,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "Output:\n\n{\"predictions\": [\n{\n\"label\": \"00_Short_Serve\",\n\"confidence\": 0.75,\n\"evidence\": \"The player is at the ServeLine, which increases the possibility of a serve shot. The first 5 frames of right_arm is not exactly close to P_210_330 but it shows a similar pattern. The right_torso shows minimal rotation throughout the sequence, which is common for serve shots. However, the confidence is not very high as few frames are differently oriented.\"\n}\n]}",
+      "tokens_used": 2776,
+      "analysis_summary": {
+        "frame_count": 37,
+        "poselet_summary": {
+          "total_frames": 37,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_60": 4,
+              "P_30_90": 14,
+              "P_60_0": 9,
+              "P_30_0": 6,
+              "P_60_330": 2,
+              "P_0_90": 2
+            },
+            "left_leg": {
+              "P_90_150": 23,
+              "P_60_150": 14
+            },
+            "left_torso": {
+              "P_270_300": 23,
+              "P_240_300": 14
+            },
+            "right_arm": {
+              "P_150_60": 28,
+              "P_120_0": 7,
+              "P_150_90": 1,
+              "P_120_60": 1
+            },
+            "right_leg": {
+              "P_90_90": 21,
+              "P_60_120": 1,
+              "P_150_90": 4,
+              "P_90_120": 1,
+              "P_90_150": 2,
+              "P_120_90": 4,
+              "P_120_120": 4
+            },
+            "right_torso": {
+              "P_270_270": 25,
+              "P_240_270": 1,
+              "P_300_270": 11
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_90",
+              14
+            ],
+            "left_leg": [
+              "P_90_150",
+              23
+            ],
+            "left_torso": [
+              "P_270_300",
+              23
+            ],
+            "right_arm": [
+              "P_150_60",
+              28
+            ],
+            "right_leg": [
+              "P_90_90",
+              21
+            ],
+            "right_torso": [
+              "P_270_270",
+              25
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "hold",
+          "transition",
+          "transition"
+        ]
+      }
+    },
+    {
+      "file": "/Users/chanakyd/work/vdark/badminton/badminton/VB_DATA/poses/00_Short_Serve/2022-09-07_20-06-13_dataset_set1_134_010991_011022_B_00.csv",
+      "shot_type": "00_Short_Serve",
+      "frame_count": 31,
+      "pose_processing": true,
+      "classification_success": true,
+      "classification": "{\"predictions\": [\n{\n\"label\": \"13_Long_Serve\",\n\"confidence\": 0.75,\n\"evidence\": \"The player is at the ServeLine, an indication of a possible serve. From frames 1 to 5, the right_arm orientation is near P_180_90, which is close to the expected starting position of P_210_240 for a Long Serve. There is a visible swing of the arm from this position, reaching higher orientations P_150_120, similar to the typical long serve motion. The left_arm starts at around P_30_150 and moves downward to P_60_270, a slightly larger movement than expected, but still resemblant of a Long Serve action. Combined with minimal torso rotation all through, these signs indicate a 13_Long_Serve, but with some slight variations, hence the confidence of 0.75.\"\n}\n]}",
+      "tokens_used": 2659,
+      "analysis_summary": {
+        "frame_count": 31,
+        "poselet_summary": {
+          "total_frames": 31,
+          "poselet_counts": {
+            "left_arm": {
+              "P_30_150": 2,
+              "P_30_120": 6,
+              "P_30_180": 4,
+              "P_60_270": 5,
+              "P_60_0": 3,
+              "P_30_90": 5,
+              "P_60_60": 2,
+              "P_60_30": 4
+            },
+            "left_leg": {
+              "P_90_60": 2,
+              "P_60_120": 3,
+              "P_90_90": 3,
+              "P_90_150": 10,
+              "P_90_120": 7,
+              "P_150_60": 1,
+              "P_90_180": 4,
+              "P_60_90": 1
+            },
+            "left_torso": {
+              "P_270_270": 8,
+              "P_240_300": 4,
+              "P_270_300": 17,
+              "P_300_300": 1,
+              "P_270_330": 1
+            },
+            "right_arm": {
+              "P_180_90": 3,
+              "P_150_90": 10,
+              "P_180_120": 2,
+              "P_150_120": 8,
+              "P_120_120": 1,
+              "P_120_60": 4,
+              "P_150_60": 2,
+              "P_120_150": 1
+            },
+            "right_leg": {
+              "P_90_90": 14,
+              "P_90_60": 6,
+              "P_30_120": 7,
+              "P_90_0": 1,
+              "P_90_120": 3
+            },
+            "right_torso": {
+              "P_270_240": 12,
+              "P_270_270": 18,
+              "P_210_300": 1
+            }
+          },
+          "most_common_poselets": {
+            "left_arm": [
+              "P_30_120",
+              6
+            ],
+            "left_leg": [
+              "P_90_150",
+              10
+            ],
+            "left_torso": [
+              "P_270_300",
+              17
+            ],
+            "right_arm": [
+              "P_150_90",
+              10
+            ],
+            "right_leg": [
+              "P_90_90",
+              14
+            ],
+            "right_torso": [
+              "P_270_270",
+              18
+            ]
+          }
+        },
+        "shot_phases": [
+          "preparation",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "transition",
+          "hold",
+          "hold",
+          "transition",
+          "transition",
+          "transition"
+        ]
+      }
+    }
+  ]
+}
