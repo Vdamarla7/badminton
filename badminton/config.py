@@ -62,10 +62,10 @@ MODEL_CONFIG = {
 
 # Visualization settings
 VISUALIZATION_CONFIG = {
-    "keypoint_radius": 5,
+    "keypoint_radius": 2,
     "keypoint_thickness": 2,
     "bbox_thickness": 2,
-    "line_thickness": 2,
+    "line_thickness": 1,
     "colors": {
         "player_a": (0, 255, 0),    # Green
         "player_b": (255, 0, 0),    # Blue (BGR format)
