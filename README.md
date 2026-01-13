@@ -95,10 +95,13 @@ To enable pose-centric research, I release extracted pose sequences derived from
 - Metadata stored in `videoBadminton_metadata.csv`  
 - Train / val / test splits provided  
 
-**Pose CSVs:**  
+**Pose CSVs:** 
+The pose dataset is available in the following github folder: 'VB_DATA/'
+More details: `badminton/pose_extractor/extractor.md`
+
+If you don't want to use git, you can download form here: 
 https://drive.google.com/file/d/14Ktq68uIm1I6CGAd1xHeOqgWw66stNo4/view
 
-More details: `badminton/pose_extractor/extractor.md`
 
 ---
 
@@ -120,6 +123,7 @@ Experimental setup:
 </p>
 <p align="center"><em>Pose extraction and validation pipeline.</em></p>
 
+The code is available in the 'src/baselines/' directory.
 These models achieve reasonable accuracy, but are **opaque**.
 
 ---
@@ -190,8 +194,9 @@ pose sequence
 → LLM inference
 → {label, confidence, evidence}
 
-
 Outputs are structured JSON, explicitly tying predictions to pose-derived evidence.
+
+An end-to-end example is available in the 'src/openAI.ipynb' notebook.
 
 ---
 
