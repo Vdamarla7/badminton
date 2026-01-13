@@ -96,8 +96,9 @@ To enable pose-centric research, I release extracted pose sequences derived from
 - Train / val / test splits provided  
 
 **Pose CSVs:** 
-The pose dataset is available in the following github folder: 'VB_DATA/'
-More details: `badminton/pose_extractor/extractor.md`
+The pose dataset is available in the following github folder: ['VB_DATA/'](VB_DATA)
+
+The code for pose extractor is available in the [pose_extractor] (src/pose_extractor) folder.
 
 If you don't want to use git, you can download form here: 
 https://drive.google.com/file/d/14Ktq68uIm1I6CGAd1xHeOqgWw66stNo4/view
