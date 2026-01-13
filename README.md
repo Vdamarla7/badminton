@@ -21,7 +21,7 @@ A true coaching system must do more than classify actions. It must:
 Badminton serves as the first testbed for exploring this idea.
 
 <p align="center">
-  <img src="badminton/assets/figures/coaching_loop.png" width="650">
+  <img src="assets/figures/coaching_loop.png" width="650">
 </p>
 <p align="center"><em>From observation to explanation and feedback: the AI coaching loop.</em></p>
 
@@ -62,7 +62,7 @@ Pose provides a compact, explainable representation of human motion:
 - **Future-proofing:** Improves as cameras and pose models improve  
 
 <p align="center">
-  <img src="badminton/assets/figures/pose_representation.png" width="500">
+  <img src="assets/figures/pose_representation.png" width="500">
 </p>
 <p align="center"><em>Pose as a concise, human-understandable motion representation.</em></p>
 
@@ -85,7 +85,7 @@ To enable pose-centric research, I release extracted pose sequences derived from
 - **Manual validation:** Active shooter verified and noisy clips cleaned  
 
 <p align="center">
-  <img src="badminton/assets/figures/dataset_pipeline.png" width="700">
+  <img src="assets/figures/dataset_pipeline.png" width="700">
 </p>
 <p align="center"><em>Pose extraction and validation pipeline.</em></p>
 
@@ -116,7 +116,7 @@ Experimental setup:
 - Hyperparameter tuning performed  
 
 <p align="center">
-  <img src="badminton/assets/figures/previous_work_pipeline.png" width="700">
+  <img src="assets/figures/previous_work_pipeline.png" width="700">
 </p>
 <p align="center"><em>Pose extraction and validation pipeline.</em></p>
 
@@ -171,7 +171,7 @@ To reduce prompt complexity, this system uses **hand-crafted biomechanical featu
 - “Split-step → lunge toward forecourt”
 
 <p align="center">
-  <img src="badminton/assets/figures/llm_inference_pipeline.png" width="700">
+  <img src="assets/figures/llm_inference_pipeline.png" width="700">
 </p>
 <p align="center"><em>Example LLM inference with evidence and confidence.</em></p>
 
