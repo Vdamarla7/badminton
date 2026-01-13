@@ -197,7 +197,7 @@ pose sequence
 
 Outputs are structured JSON, explicitly tying predictions to pose-derived evidence.
 
-An end-to-end example is available in the 'src/openAI.ipynb' notebook.
+An end-to-end example is available in the [openAI.ipynb](src/openAI.ipynb) notebook.
 
 ---
 
