@@ -201,7 +201,7 @@ An end-to-end example is available in the [openAI.ipynb](src/openAI.ipynb) noteb
 
 ---
 
-## 11. Current Status & Honest Assessment
+## 11. Current Status
 
 **What exists today:**
 - Public pose dataset
@@ -234,74 +234,6 @@ This is an exciting research direction, and I hope to continue exploring it.
 
 ---
 
-## Quickstart
-
-### 1) Environment
-```bash
-# Python >= 3.10 recommended
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-If you plan to run the LLM notebooks:
-```bash
-export OPENAI_API_KEY=YOUR_KEY   # or set in your shell/profile
-```
-
-### 2) Data
-```
-datasets/
-  raw/
-    video-badminton/      # original videos/labels (not included)
-  poses/
-    video-badminton/      # provided JSONL pose splits
-```
-
-### 3) Baselines
-Open the notebooks:
-- `notebooks/baselines/cnn_baseline.ipynb`
-- `notebooks/baselines/lstm_baseline.ipynb`
-
-### 4) LLM/LMM experiments
-- `notebooks/llm/posescript_llm_shot_classification.ipynb`
-- `notebooks/llm/customtext_llm_shot_classification.ipynb`
-
----
-
-## Repo Structure
-```
-.
-├── configs/
-│   └── llm/
-│       ├── posescript.yaml
-│       └── customtext.yaml
-├── datasets/
-│   └── poses/
-│       ├── video-badminton/
-│       │   ├── train.jsonl
-│       │   ├── val.jsonl
-│       │   ├── test.jsonl
-│       │   └── README.md
-│       └── kaggle-badminton/          # (coming soon)
-├── notebooks/
-│   ├── baselines/
-│   │   ├── cnn_baseline.ipynb
-│   │   └── lstm_baseline.ipynb
-│   └── llm/
-│       ├── posescript_llm_shot_classification.ipynb
-│       └── customtext_llm_shot_classification.ipynb
-├── scripts/
-│   ├── extract_poses.py
-│   ├── lift_2d_to_3d.py
-│   └── generate_text_descriptions.py
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
-
----
-
 ## Contributing
 PRs are welcome! If you:
 - Have additional pose datasets to share,  
@@ -314,7 +246,7 @@ please open an issue or PR with a short description.
 
 ## License
 - Code: MIT  
-- Pose annotations: CC BY-NC 4.0
+- Pose annotations: CC BY 4.0
 
 ---
 
